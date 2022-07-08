@@ -1,0 +1,166 @@
+@import url('../../external.html?link=https://fonts.googleapis.com/css2?family=Bitter:wght@100&amp;family=Outfit:wght@400;600&amp;family=Red+Hat+Display:wght@500;700;900&amp;display=swap');
+
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Pale-blue);
+    font-family: "Red Hat Display" , sans-serif;
+    text-align: center;
+    /* to center the image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 10px;
+ 
+}
+
+img{
+    max-width: 100%;
+}
+/* to style the image to fit into the container */
+.container img.hero{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.container h2{
+    color: hsl(223, 47%, 23%);
+    margin: 10px 0;
+}
+/* to style the button change with the h4$music icon */
+.container .pricing{
+    margin:30px auto;
+    padding: 10px;
+    background-color: var(--Very-pale-blue);
+    width: 90%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;}
+/* to style the music icon and the h4 */
+.container .pricing article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* to style the music icon to its position */
+.container .pricing article img{
+    margin-right: 10px;
+}
+
+/* to style general btn */
+.btn{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition:all 0.2s ease-in-out;
+
+}
+
+
+button{
+    font-family: inherit;
+
+}
+
+.first_btn{
+    color:var(--Bright-blue);
+    text-decoration: underline;
+    background-color: transparent;
+    
+    
+
+}
+
+.second_btn{
+    background-color: var(--Bright-blue);
+    color: #fff;
+    padding: 10px ;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width:90%;
+}
+.first_btn:hover,
+.second_btn:hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.third_btn{
+    color: var(--Desaturated-blue);
+    background-color: transparent;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.third_btn:hover{
+    color: hsl(223,47%, 23%);
+}
+
+.container .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* for mobile for the pattern-background  */
+ .bg__image{ 
+     background: url('images/pattern-background-mobile.svg') 
+     no-repeat center/cover; 
+    position: absolute; 
+     height: 400px; 
+     top: 0; 
+     left: 0; 
+     right: 0; 
+     bottom: 0; 
+     z-index:-1 ;  
+
+}
+.container{
+    background-color:#fff;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px hsl(228,45%,44%,0.15);
+    }
+    
+
+p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--Desaturated-blue);}
+
+.container p.description{
+    padding:0 30px;
+}
+/* for desktop for the pattern background */
+@media (min-width:768px) {
+    .bg__image{
+        background: url("images/pattern-background-desktop.svg") no-repeat center/cover;
+        height: 50vh;
+    }
+        /* to make the container responsive */
+        .container{
+            width:400px;
+        }
+    }
+
+    
+        .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
